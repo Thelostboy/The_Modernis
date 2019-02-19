@@ -1,0 +1,148 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.row{
+    margin: 0 !important;
+}
+.container-fluid{
+    max-width: 1200px;
+    background-color: #280000;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 960px !important;
+    padding: 0 !important;
+}
+
+.header {
+    background-color: #280000;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #FDFDFD;
+}
+/* Header */
+
+.logo h3{
+    font-family: 'Open Sans', serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header ul{
+    margin: 0;
+    padding: 0;
+}
+.header ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.header ul li a{
+    padding: 8px 12px;
+    color: #FDFDFD;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+.header a:hover{
+    text-decoration: none !important;
+    color: #FDFDFD !important;
+    background-color: #76C38F;
+    border-radius: 15px;
+}
+.header .active{
+    background-color: #76C38F;
+    border-radius: 15px;
+}
+/* Carousel */
+.container-fluid:nth-child(2){
+    background-color: #660000;
+    max-width: 1200px;
+}
+.carousel{
+    background-color: #280000;
+    padding: 20px 0px;
+}
+.carousel img{
+    width: 100%;
+    border-radius: 50%;
+}
+.carousel p{
+    color:#FDFDFD;
+}
+.carousel .item{
+    display: flex !important;
+    align-items: center;
+    margin: 0 60px;
+}
+.carousel .subcribe p:nth-child(1){
+    font-size: 30px;
+    font-weight: 600;
+}
+.carousel .subcribe p:nth-child(2){
+    font-size: 14px;   
+
+}
+.carousel .subcribe a{
+    text-decoration: none;
+    color: #FDFDFD;
+    background-color: #76C38F;
+    border-radius: 15px;
+    padding: 10px 16px;
+}
+.carousel-control-next{
+    right: -50px !important;
+}
+.carousel-control-prev{
+    left: -50px !important;
+}
+[class*='chevron']{
+    color: #76C38F;
+    font-size: 36px;
+    font-weight: bold;
+}
+/* Services */
+
+.services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    background-color: #660000 !important;
+    padding: 50px 0 !important;
+    border-bottom: 2px solid #303030;
+}
+.service-item{
+    text-align: center;
+    background-color: #FFF;
+    padding: 0 !important;
+    transition: 200ms all;
+}
+.service-item h4{
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color:#333333;
+}
+.service-item p{
+    padding: 0 15px;
+    color:#B1B1B1;
+    font-size: 12px;
+}
+.service-item img{
+    margin-top: 20px;
+}
+.service-item:hover{
+    background-color: #76C38F;
+}
+.service-item:hover>*{
+    color: #000;
+}
+
+/* Work */
+.work .row.col-lg-4{
+    background-color: blue;
+}
+
+
+
+/* Responsive */
