@@ -17,10 +17,14 @@ body {
 
 .header {
     background-color: #280000;
-    padding-top: 20px;
+    padding-top: 20px !important;
     display: flex;
     justify-content: space-between;
     color: #FDFDFD;
+}
+a:hover{
+    text-decoration: none !important;
+    cursor: pointer !important;
 }
 /* Header */
 
@@ -49,6 +53,7 @@ body {
     text-decoration: none !important;
     color: #FDFDFD !important;
     background-color: #76C38F;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     border-radius: 15px;
 }
 .header .active{
@@ -90,6 +95,9 @@ body {
     background-color: #76C38F;
     border-radius: 15px;
     padding: 10px 16px;
+}
+.carousel .subcribe a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .carousel-control-next{
     right: -50px !important;
@@ -139,10 +147,49 @@ body {
 }
 
 /* Work */
-.work .row.col-lg-4{
-    background-color: blue;
+.work{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    position: relative;
+    padding-top: 50px !important;
+    padding-bottom: 60px !important;
 }
-
+.work .label{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    padding: 4px 8px;
+    background-color: #303030;
+    color: #FDFDFD;
+    text-transform: uppercase;
+    font-size: 24px;
+    border-radius: 15px;
+}
+.work-item{
+    position: relative;
+}
+.work-item a{
+    position: absolute;
+    top: 90%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#FFF !important;
+}
+.work-item a:hover{
+    color: #76C38F !important;
+}
+.work-item::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 80%;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+}
 
 
 /* Responsive */
