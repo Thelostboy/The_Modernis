@@ -197,10 +197,10 @@ a:hover {
 /* Work */
 
 .work {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    position: relative;
     padding-top: 50px !important;
     padding-bottom: 60px !important;
 }
@@ -271,7 +271,10 @@ h5 {
 .footer p {
     color: #979797;
 }
-
+.footer input, .footer textarea{
+    display: block;
+    width: 100%;
+}
 .blog a:nth-child(6) {
     font-size: 12px;
 }
@@ -357,7 +360,19 @@ hr {
 }
 
 /* Responsive */
+/* 1.PC */
+@media(max-width:992px){
+    .service-item:nth-child(1){
+        margin-left: 20px;
+    }
+    .service-item:nth-child(4){
+        margin-right: 20px;
+    }
+    
+    /*  */
+}
 
+/* 2.Tablet */
 @media (max-width: 768px) {
     /* Header */
     .header {
@@ -380,16 +395,13 @@ hr {
     }
 /* Work */
 
-
-
 .work {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
 }
-/* .work-item:nth-child(2n){
-    margin-right: 50px;
-} */
+
+
 .odd-item{
     margin-left: 50px;
 }
@@ -397,8 +409,19 @@ hr {
     margin-right: 50px;
 }
 
-
-
+/* Footer */
+.footer .link{
+    margin-bottom: 50px !important;
+}
+.footer .blog, .footer .tweets{
+    padding-right: 80px !important;
+}
+.footer{
+    margin-left: 50px !important;
+}
+.footer input, .footer textarea{
+    width: 75%;
+}
 
 
 
