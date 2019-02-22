@@ -422,8 +422,60 @@ hr {
 .footer input, .footer textarea{
     width: 75%;
 }
-
-
-
 /*  */
+}
+/* 3 */
+@media(max-width:576px) {
+    /* Header */
+    .navbar ul{
+        display: grid !important;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px 30px
+    }
+/* Carousel */
+.carousel .item p:nth-child(1){
+    font-size: 1.5rem;
+}
+.carousel .item p:nth-child(2){
+    font-size: 0.75rem;
+}
+.carousel .item a{
+    font-size: 0.75rem;
+}
+/* Services */
+.service-item h4, .label{
+    font-size: 1rem !important;
+}
+.service-item p{
+    font-size: 0.65rem;
+}
+
+    /*Work  */
+    .work .work-item a{
+        font-size: 0.75rem;
+    }
+    /* Footer */
+.footer h5{
+    margin-bottom: 20px !important;
+}
+.footer p{
+    font-size: 0.75rem
+}
+.footer a{
+    font-size: 0.75rem;
+}
+.footer .contact input{
+    height: 30px;
+    font-size: .75rem;
+}
+#message{
+    height: 60px;
+}
+::placeholder{
+    font-size: 0.75rem;
+}
+/* Copyright */
+.copyright p{
+    font-size: 0.75rem;
+}
 }
